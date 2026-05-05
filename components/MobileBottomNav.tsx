@@ -61,9 +61,10 @@ export default function MobileBottomNav() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3, delay: 0.5 }}
-            className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-t border-gray-100 shadow-lg"
+            className="md:hidden mobile-bottom-nav z-50 bg-white/90 backdrop-blur-md border-t border-gray-100 shadow-lg"
+            style={{ touchAction: "manipulation" }}
         >
-            <div className="flex items-center justify-around px-2 py-3 safe-area-inset-bottom">
+            <div className="flex items-center justify-around px-2 py-3">
                 {navItems.map((item) => {
                     const isActive = activeSection === item.href;
                     return (

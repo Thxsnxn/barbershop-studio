@@ -132,6 +132,7 @@ export default function RootLayout({
   return (
     <html lang="th" className={kanit.variable}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
         <Script
           id="schema-org"
           type="application/ld+json"

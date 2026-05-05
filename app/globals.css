@@ -22,3 +22,20 @@
     text-wrap: balance;
   }
 }
+
+/* Fix mobile browser bottom nav floating issue */
+/* When Chrome hides address bar, viewport changes — dvh tracks the dynamic viewport */
+@supports (height: 100dvh) {
+  :root {
+    --vh-fix: 1dvh;
+  }
+}
+
+/* Mobile bottom nav: stick to real bottom edge */
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
