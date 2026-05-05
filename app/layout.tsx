@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "th_TH",
-    url: "https://buddycool.com",
+    url: "https://buddy-cool.vercel.app",
     siteName: "buddy Cool Barber Shop",
     title: "buddy Cool Barber Shop | ร้านตัดผม พหลโยธิน 53 บางเขน",
     description:
@@ -62,11 +62,11 @@ export const metadata: Metadata = {
       "ร้านตัดผมชาย พหลโยธิน 53 แยก 16 บางเขน บริการตัดผม สระ ดัดผม ทำสี",
     images: ["/logo.jpg"],
   },
-  verification: {
-    google: "google-site-verification-code",
-  },
+  // verification: {
+  //   google: "ใส่โค้ดจาก Google Search Console ตรงนี้",
+  // },
   alternates: {
-    canonical: "https://buddycool.com",
+    canonical: "https://buddy-cool.vercel.app",
   },
 };
 
@@ -78,15 +78,15 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HairSalon",
-    "@id": "https://buddycool.com",
+    "@id": "https://buddy-cool.vercel.app",
     name: "buddy Cool Barber Shop",
     alternateName: "buddy Cool",
     description:
       "ร้านตัดผมชาย บริการตัดผม สระ ดัดผม ทำสี โกนหนวด พหลโยธิน 53 แยก 16 บางเขน",
-    url: "https://buddycool.com",
+    url: "https://buddy-cool.vercel.app",
     telephone: "+66614187946",
     priceRange: "฿50-฿2,500",
-    image: "https://buddycool.com/logo.jpg",
+    image: "https://buddy-cool.vercel.app/logo.jpg",
     address: {
       "@type": "PostalAddress",
       streetAddress: "พหลโยธิน 53 แยก 16",
